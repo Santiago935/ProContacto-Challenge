@@ -9,13 +9,13 @@ Un servidor HTTP consiste en un software que recibe request y responde usando el
 ### 2. ¿Qué son los verbos HTTP? Mencionar los más conocidos
 
 Los verbos HTTP son metodos que el cliente puede realizar sobre un recurso del servidor. Algunos ejemplos de estos son:
-→ GET que se usa para obtener datos del servidor.
-→ POST que se usa para crear un nuevo recurso en el servidor
-→ PUT que reemplaza un recurso ya existente en el servidor
-→ PATCH que modifica parcialmente un recurso
-→ DELETE que elimina un recurso del servidor
-→ HEAD que obtiene un header de algun recurso del servidor
-→ OPTIONS que consulta los metodos disponibles respecto a un recurso del servidor.
+→ GET que se usa para obtener datos del servidor.  
+→ POST que se usa para crear un nuevo recurso en el servidor.  
+→ PUT que reemplaza un recurso ya existente en el servidor.    
+→ PATCH que modifica parcialmente un recurso.  
+→ DELETE que elimina un recurso del servidor.  
+→ HEAD que obtiene un header de algun recurso del servidor.  
+→ OPTIONS que consulta los metodos disponibles respecto a un recurso del servidor.  
 
 
 ### 3. ¿Qué es un request y un response en una comunicación HTTP? ¿Qué son los headers?
@@ -28,12 +28,12 @@ Son los parámetros incluidos en el URL. Estan formados con clave-valor, y comie
 
 ### 5. ¿Qué es el responseCode? ¿Qué significado tiene los posibles valores devueltos?
 
-Un responseCode es un codigo de respuesta que da HTTP a la solicitud. Se enumeran en cinco intervalos de valores:
-[100-199] son las respuestas de estandar informativa
-[200-299] son respuestas que indican que la solicitud se ha completado correctamente
-[300-399] indica que la respuesta fue redireccionada a un recurso externo
-[400-499] indica que hubo un error por parte del cliente
-[500-599] indica que hubo un error por parte del servidor.
+Un responseCode es un codigo de respuesta que da HTTP a la solicitud. Se enumeran en cinco intervalos de valores:  
+[100-199] son las respuestas de estandar informativa.  
+[200-299] son respuestas que indican que la solicitud se ha completado correctamente.  
+[300-399] indica que la respuesta fue redireccionada a un recurso externo.  
+[400-499] indica que hubo un error por parte del cliente.  
+[500-599] indica que hubo un error por parte del servidor.  
 
 ### 6. ¿Cómo se envía la data en un Get y cómo en un POST?
 
@@ -45,7 +45,7 @@ Se usa el metodo GET.
 
 ### 8. Explicar brevemente qué son las estructuras de datos JSON y XML dando ejemplo de estructuras posibles.
 
-Las estructuras JSON y XML son formas de organizar los datos. En JSON se usa un formato clave-valor. Osea, por cada etiqueta se rellena uno o varios valores. Por ejemplo:
+Las estructuras JSON y XML son formas de organizar los datos. En JSON se usa un formato clave-valor. Osea, por cada etiqueta se rellena uno o varios valores. Por ejemplo:  
 
 ```json
 {
@@ -54,7 +54,7 @@ Las estructuras JSON y XML son formas de organizar los datos. En JSON se usa un 
 }
 ```
 
-En XML es una estructura mas echa para computadoras, poniendo valores entre etiquetas. Por ejemplo:
+En XML es una estructura mas echa para computadoras, poniendo valores entre etiquetas. Por ejemplo:  
 
 ```xml
 <Name>Santiago</Name>

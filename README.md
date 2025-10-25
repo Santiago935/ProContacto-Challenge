@@ -75,3 +75,87 @@ El estandar REST Full consiste en usar una APIREST para la comunicación entre e
 ### 11. ¿Qué son los headers en un request? ¿Para qué se utiliza el key Content-type en un header?
 
 Los headers del request son datos que acompañan a la solicitud del cliente hacia el servidor web. Por ejemplo autenticacion o el idioma. El content-type es lo que indica el tipo de dato que se esta enviando en header del request.
+
+# Cuestionario
+
+Respuestas a las preguntas del Ejercicio 6
+
+---
+
+## Soluciones de Salesforce
+
+**A. ¿Qué es Salesforce?** Salesforce es una plataforma de gestión de empresas en la nube.
+
+**B. ¿Qué es Sales Cloud?** Un software que automatiza el ciclo de ventas para ayudar a las empresas a vender sus productos.
+
+**C. ¿Qué es Service Cloud?** Es una plataforma de servicio de atención al cliente que ayuda a empresas a gestionar y resolver consultas de índole soporte técnico.
+
+**D. ¿Qué es Health Cloud?** Es una plataforma idéntica a Service Cloud pero enfocada en el sector de salud (o sea, trabajando con datos clínicos y no clínicos de un paciente).
+
+**E. ¿Qué es Marketing Cloud?** Es una plataforma idéntica a las dos anteriores, pero esta vez enfocada en el mundo del marketing, trabajando con análisis y datos de campañas, redes, etc.
+
+---
+
+## Funcionalidades de Salesforce
+
+**A. ¿Qué es un RecordType?** Es una herramienta para crear registros de un objeto.
+
+**B. ¿Qué es un ReportType?** Representa los metadatos asociados a un tipo de informe personalizado.
+
+**C. ¿Qué es un Page Layout?** Una herramienta para controlar la disposición y organización de las características de los objetos.
+
+**D. ¿Qué es un Compact Layout?** Es una opción para mostrar los campos clave de un registro.
+
+**E. ¿Qué es un Perfil?** Un conjunto de configuraciones y permisos que controla el acceso de un usuario a objetos y datos.
+
+**F. ¿Qué es un Rol?** Un subconjunto de usuarios definidos del cual tienen acceso a determinados objetos (Nota: El rol en Salesforce principalmente define la jerarquía de datos a los que un usuario puede acceder, afectando el compartimiento de datos).
+
+**G. ¿Qué es un Validation Rule?** Una regla que valida los datos ingresados antes de guardarlos.
+
+**H. ¿Qué diferencia hay entre una relación Master Detail y Lookup?** *(La respuesta para la H estaba ausente)*
+
+**I. ¿Qué es un Sandbox?** Es una copia de un entorno de Salesforce para hacer pruebas de desarrollo.
+
+**J. ¿Qué es un ChangeSet?** Es una herramienta de Salesforce para migrar metadatos de un *sandbox* a otro (o a producción).
+
+**K. ¿Para qué sirve el Import Wizard de Salesforce?** Sirve para importar datos en masa.
+
+**L. ¿Para qué sirve la funcionalidad Web to Lead?** Para generar un formulario web con la finalidad de crear *Leads*.
+
+**M. ¿Para qué sirve la funcionalidad Web to Case?** Para generar un formulario web, pero con la finalidad de crear un *Case* (Caso).
+
+**N. ¿Para qué sirve la funcionalidad Omnichannel?** Asigna *Cases* y *Leads* (o elementos de trabajo) a un agente para agilizar el trabajo.
+
+**O. ¿Para qué sirve la funcionalidad Chatter?** Un foro de usuarios interno de Salesforce.
+
+---
+
+## Conceptos Generales
+
+**A. ¿Qué significa SaaS?** Significa *Software as a Service* (Software como Servicio), del cual es un modelo donde se alquila el uso de un determinado software.
+
+**B. ¿Salesforce es SaaS?** Sí.
+
+**C. ¿Qué significa que una solución sea Cloud?** Significa que la solución se ejecuta en algún servidor externo a la empresa (en la nube).
+
+**D. ¿Qué significa que una solución sea On-Premise?** Que la solución se ejecuta en algún servidor interno de la empresa.
+
+**E. ¿Qué es un pipeline de ventas?** Un proceso de ventas del cual se divide en etapas.
+
+**F. ¿Qué es un funnel de ventas?** El número de clientes por etapa de venta (o una representación visual del proceso de conversión).
+
+**G. ¿Qué significa Customer Experience?** Es la percepción total de un cliente que se crea a partir de sus interacciones.
+
+**H. ¿Qué significa omnicanalidad?** Habilidad de un negocio para interactuar con clientes de manera integrada a través de múltiples canales.
+
+**I. ¿Qué significa que un negocio sea B2B? ¿Qué significa que un negocio sea B2C? ¿Qué es un KPI?** B2B significa venta entre negocios. B2C significa venta a un cliente (consumidor), y KPI es una métrica clave de rendimiento (*Key Performance Indicator*) para medir el rendimiento (ej. de una venta).
+
+**J. ¿Qué es una API y en qué se diferencia de una Rest API?** Una API es una interfaz que interactúa entre dos *softwares* o servidores distintos. La diferencia con REST API es que este último se especializa en el uso de HTTP y JSON con el fin de especializarse con navegadores web (Nota: REST API es un tipo de arquitectura API que usa protocolos como HTTP).
+
+**K. ¿Qué es un Proceso Batch?** Proceso que permite ejecutar grandes volúmenes de datos.
+
+**L. ¿Qué es Kanban?** Un método visual (etiquetas) para la gestión del flujo de trabajo y el estado de una tarea (*Pendiente, Terminado*, etc.).
+
+**M. ¿Qué es un ERP?** Un ERP es un software que integra todas las áreas de una empresa (*Enterprise Resource Planning*).
+
+**N. ¿Salesforce es un ERP?** No, ya que solo se enfoca en la relación de una empresa con sus clientes (CRM).

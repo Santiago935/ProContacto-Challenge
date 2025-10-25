@@ -76,13 +76,13 @@ El estandar REST Full consiste en usar una APIREST para la comunicación entre e
 
 Los headers del request son datos que acompañan a la solicitud del cliente hacia el servidor web. Por ejemplo autenticacion o el idioma. El content-type es lo que indica el tipo de dato que se esta enviando en header del request.
 
-# Cuestionario
+## Cuestionario
 
 Respuestas a las preguntas del Ejercicio 6
 
 ---
 
-## Soluciones de Salesforce
+### Soluciones de Salesforce
 
 **A. ¿Qué es Salesforce?** Salesforce es una plataforma de gestión de empresas en la nube.
 
@@ -96,7 +96,7 @@ Respuestas a las preguntas del Ejercicio 6
 
 ---
 
-## Funcionalidades de Salesforce
+### Funcionalidades de Salesforce
 
 **A. ¿Qué es un RecordType?** Es una herramienta para crear registros de un objeto.
 
@@ -130,7 +130,7 @@ Respuestas a las preguntas del Ejercicio 6
 
 ---
 
-## Conceptos Generales
+### Conceptos Generales
 
 **A. ¿Qué significa SaaS?** Significa *Software as a Service* (Software como Servicio), del cual es un modelo donde se alquila el uso de un determinado software.
 

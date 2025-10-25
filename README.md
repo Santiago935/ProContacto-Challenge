@@ -1,51 +1,60 @@
 # ProContacto-Challenge
 
+## Introducción  
+Este repositorio contiene mis respuestas al Desafío Técnico de ProContacto. Se omite el ejercicio 1 debido a que consiste en preparativos para la realización de los ejercicios propuestos.
+
+## Índice
+- [Ejercicio 2](#ejercicio-2)
+- [Ejercicio 3](#ejercicio-3)
+- [Ejercicio 4](#ejercicio-4)
+- [Ejercicio 5](#ejercicio-5)
+- [Ejercicio 6](#ejercicio-6)
+- [Ejercicio 7](#ejercicio-7)
+
+---
+
 ## Ejercicio 2
 
 ### 1. ¿Qué es un servidor HTTP?
-
-Un servidor HTTP consiste en un software que recibe request y responde usando el contenido de un sitio web. Todo esto usando el protocolo HTTP, y siendo accedidos mediante URLs
+Un servidor HTTP es un software que procesa solicitudes (requests) y entrega respuestas (responses) con el contenido de un sitio web. Esta comunicación se realiza a través del protocolo HTTP, y los recursos son accedidos mediante URLs.
 
 ### 2. ¿Qué son los verbos HTTP? Mencionar los más conocidos
-
-Los verbos HTTP son metodos que el cliente puede realizar sobre un recurso del servidor. Algunos ejemplos de estos son:
-→ GET que se usa para obtener datos del servidor.  
-→ POST que se usa para crear un nuevo recurso en el servidor.  
-→ PUT que reemplaza un recurso ya existente en el servidor.    
-→ PATCH que modifica parcialmente un recurso.  
-→ DELETE que elimina un recurso del servidor.  
-→ HEAD que obtiene un header de algun recurso del servidor.  
-→ OPTIONS que consulta los metodos disponibles respecto a un recurso del servidor.  
-
+Los verbos HTTP (o métodos) indican la acción que el cliente desea realizar sobre un recurso específico en el servidor. Los más conocidos son:
+* **GET**: Se utiliza para obtener datos del servidor.
+* **POST**: Se utiliza para crear un nuevo recurso en el servidor.
+* **PUT**: Reemplaza completamente un recurso ya existente en el servidor.
+* **PATCH**: Modifica parcialmente un recurso existente.
+* **DELETE**: Elimina un recurso del servidor.
+* **HEAD**: Obtiene solo los encabezados (headers) de un recurso, sin el cuerpo.
+* **OPTIONS**: Consulta los métodos y opciones de comunicación disponibles para un recurso del servidor.
 
 ### 3. ¿Qué es un request y un response en una comunicación HTTP? ¿Qué son los headers?
+Un **request** (solicitud) es el mensaje que el cliente envía al servidor. Un **response** (respuesta) es el mensaje que el servidor devuelve al cliente tras procesar la solicitud.
 
-Request es el mensaje que envia el cliente al servidor y response es la respuesta que da al servidor a dicho request. Los headers son metadatos que vienen en el mensaje (idioma, tipo de dato, etc)
+Los **headers** (encabezados) son metadatos clave-valor que se envían tanto en la solicitud como en la respuesta. Proporcionan información esencial sobre el mensaje, como el tipo de contenido (`Content-Type`), autenticación, idioma preferido, etc.
 
 ### 4. ¿Qué es un queryString? (En el contexto de una url)
-
-Son los parámetros incluidos en el URL. Estan formados con clave-valor, y comienzan con `?` y se separan con `&`.
+Es un conjunto de parámetros clave-valor incluidos al final de una URL. Comienzan con un signo de interrogación (`?`) y los pares se separan con un ampersand (`&`). Se utilizan comúnmente para enviar datos en solicitudes GET.
 
 ### 5. ¿Qué es el responseCode? ¿Qué significado tiene los posibles valores devueltos?
-
-Un responseCode es un codigo de respuesta que da HTTP a la solicitud. Se enumeran en cinco intervalos de valores:  
-[100-199] son las respuestas de estandar informativa.  
-[200-299] son respuestas que indican que la solicitud se ha completado correctamente.  
-[300-399] indica que la respuesta fue redireccionada a un recurso externo.  
-[400-499] indica que hubo un error por parte del cliente.  
-[500-599] indica que hubo un error por parte del servidor.  
+Un `responseCode` (código de respuesta) es un código numérico devuelto por el servidor que indica el resultado de la solicitud HTTP. Se agrupan en cinco rangos:
+* **[100-199]**: Respuestas informativas.
+* **[200-299]**: Respuestas exitosas (la solicitud se completó correctamente).
+* **[300-399]**: Redirecciones (se necesita una acción adicional).
+* **[400-499]**: Errores del cliente (la solicitud es incorrecta).
+* **[500-599]**: Errores del servidor (el servidor falló al procesar la solicitud).
 
 ### 6. ¿Cómo se envía la data en un Get y cómo en un POST?
-
-Usando GET los datos se envian en el mismo URL, mientras que en POST se envian los datos en la solicitud HTTP (en la parte del cuerpo del request).
+En **GET**, los datos se envían como parte de la URL. 
+En **POST**, los datos se envían en el **cuerpo** del mensaje de la solicitud.
 
 ### 7. ¿Qué verbo http utiliza el navegador cuando accedemos a una página?
-
-Se usa el metodo GET.
+Utiliza el método GET.
 
 ### 8. Explicar brevemente qué son las estructuras de datos JSON y XML dando ejemplo de estructuras posibles.
+Son formatos de texto estándar para estructurar e intercambiar datos.
 
-Las estructuras JSON y XML son formas de organizar los datos. En JSON se usa un formato clave-valor. Osea, por cada etiqueta se rellena uno o varios valores. Por ejemplo:  
+Las estructuras JSON y XML son formas de organizar los datos. En JSON se usa un formato clave-valor. Por ejemplo:  
 
 ```json
 {
@@ -66,19 +75,21 @@ En XML es una estructura mas echa para computadoras, poniendo valores entre etiq
 
 ### 9. Explicar brevemente el estándar SOAP
 
-SOAP es un protocolo para intercambiar informacion entre un servidor WEB y cliente, estructurandose con formato XML. 
+SOAP (Simple Object Access Protocol) es un protocolo basado en XML para intercambiar información estructurada en la implementación de servicios web.
 
 ### 10. Explicar brevemente el estándar REST Full 
 
-El estandar REST Full consiste en usar una APIREST para la comunicación entre el servidor web y el cliente, respetando los protocolos HTTP.
+REST (Representational State Transfer) es un estilo de arquitectura para diseñar aplicaciones en red. Una API RESTful es una API que sigue los principios de REST, utilizando los verbos HTTP para operar sobre los recursos.
 
 ### 11. ¿Qué son los headers en un request? ¿Para qué se utiliza el key Content-type en un header?
 
-Los headers del request son datos que acompañan a la solicitud del cliente hacia el servidor web. Por ejemplo autenticacion o el idioma. El content-type es lo que indica el tipo de dato que se esta enviando en header del request.
-  
+Los headers de un request son metadatos que proporcionan información adicional sobre la solicitud al servido. Por ejemplo autenticación o de idioma. El content-type es lo que indica el tipo de dato que se esta enviando en header del request.
+
+---
+
 ## Ejercicio 3 
   
-Se adjuntan las pruebas del ejercicio 3, del cual consistia en usar GET y POST con el software PROMAN para la pagina ProContacto  
+Se adjuntan las pruebas del ejercicio 3, del cual consistia en usar GET y POST con el software Postman para la pagina ProContacto  
   
 Antes del POST  
 ![Imagen1](Imagenes/imagen1.png)  
@@ -90,11 +101,14 @@ Despues del POST
 **¿Qué diferencias se observan entre las llamadas el punto 1 y 3?**  
 Tras hacer el POST, se subio mi nombre y email a la pagina.
 
+---
+## Ejercicio 4  
 
-## Ejercicio 4
-Link al perfil de Trailhead dónde hice los modulos pedidos:
+Link al perfil de Trailhead dónde hice los modulos pedidos:  
 [Mi perfil de Trailhead](https://www.salesforce.com/trailblazer/e3a3wigv2bg9dt5063)
 
+
+---
 ## Ejercicio 5
 
 **1. Lead (Cliente Potencial):**
@@ -129,9 +143,8 @@ Contiene la solución a un problema o información de soporte, usado en la Base 
 
 ![Imagen3](Imagenes/Diagrama_SaleForce.png)  
 
-## Ejercicio 6
-  
 ---
+## Ejercicio 6
 
 ### Soluciones de Salesforce
 
@@ -145,12 +158,10 @@ Un software que automatiza el ciclo de ventas para ayudar a las empresas a vende
 Es una plataforma de servicio de atención al cliente que ayuda a empresas a gestionar y resolver consultas de índole soporte técnico.
 
 **D. ¿Qué es Health Cloud?**  
-Es una plataforma idéntica a Service Cloud pero enfocada en el sector de salud (o sea, trabajando con datos clínicos y no clínicos de un paciente).
+Es una plataforma idéntica a Service Cloud pero enfocada en el sector de salud (trabajando con datos clínicos y no clínicos de un paciente).
 
 **E. ¿Qué es Marketing Cloud?**  
 Es una plataforma idéntica a las dos anteriores, pero esta vez enfocada en el mundo del marketing, trabajando con análisis y datos de campañas, redes, etc.
-
----
 
 ### Funcionalidades de Salesforce
 
@@ -170,7 +181,7 @@ Es una opción para mostrar los campos clave de un registro.
 Un conjunto de configuraciones y permisos que controla el acceso de un usuario a objetos y datos.
 
 **F. ¿Qué es un Rol?**  
-Un subconjunto de usuarios definidos del cual tienen acceso a determinados objetos (Nota: El rol en Salesforce principalmente define la jerarquía de datos a los que un usuario puede acceder, afectando el compartimiento de datos).
+Un subconjunto de usuarios definidos del cual tienen acceso a determinados objetos.
 
 **G. ¿Qué es un Validation Rule?**  
 Una regla que valida los datos ingresados antes de guardarlos.
@@ -199,7 +210,6 @@ Asigna *Cases* y *Leads* (o elementos de trabajo) a un agente para agilizar el t
 **O. ¿Para qué sirve la funcionalidad Chatter?**  
 Un foro de usuarios interno de Salesforce.
 
----
 ### Conceptos Generales  
   
 **A. ¿Qué significa SaaS?**   
@@ -243,4 +253,80 @@ Un ERP es un software que integra todas las áreas de una empresa (*Enterprise R
 
 **N. ¿Salesforce es un ERP?**  
 No, ya que solo se enfoca en la relación de una empresa con sus clientes (CRM).
+
+---
+
+## Ejercicio 7
+
+El codigo que usé para resolver el ejercicio es el siguiente:
+
+Clase de Apex:
+```apex
+public class ejercicio7 {
+    public class ContactResponse {
+        public String email;
+        public String name;
+    }
+
+    @future (callout=true)
+    public static void getEmailFromProContacto(Set<Id> contactIds){
+        // Obtenemos los contactos con el campo idprocontacto
+        List<Contact> contactsToUpdate = [SELECT Id, idprocontacto__c, Email FROM Contact WHERE Id IN :contactIds AND idprocontacto__c != null];
+
+        for(Contact c : contactsToUpdate){
+            try{
+                String endpoint = 'https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts/' + c.idprocontacto__c + '.json';
+
+                Http http = new Http();
+                HttpRequest req = new HttpRequest();
+                req.setEndpoint(endpoint);
+                req.setMethod('GET');
+
+                HttpResponse res = http.send(req);
+
+                if(res.getStatusCode() == 200 && res.getBody() != null){
+                    ContactResponse result = (ContactResponse) JSON.deserialize(res.getBody(), ContactResponse.class);
+
+                    if(result != null && result.email != null){
+                        c.Email = result.email;
+                    }
+                }
+            } catch(Exception e){
+                System.debug('Error:' + e.getMessage());
+            }
+        }
+        if(!contactsToUpdate.isEmpty()){
+            update contactsToUpdate;
+        }
+    }
+
+
+}
+```
+Clase de Trigger:
+```apex
+trigger t_actualizarEmail on Contact (after insert, after update) {
+    ContactTriggerHandler.processContacts(Trigger.new, Trigger.oldMap);
+}
+```
+Clase de TriggerHandler:
+```apex
+public class ContactTriggerHandler {
+	public static void processContacts(List<Contact> newList, Map<Id, Contact> oldMap){
+        Set<Id> contactsToCall = new Set<Id>();
+
+        for(Contact c : newList){
+            // Si el campo está recién cargado o fue modificado, lo actualizo
+            if((Trigger.isInsert && c.idprocontacto__c != null) ||
+               (Trigger.isUpdate && c.idprocontacto__c != oldMap.get(c.Id).idprocontacto__c)){
+                contactsToCall.add(c.Id);
+            }
+        }
+
+        if(!contactsToCall.isEmpty()){
+            ejercicio7.getEmailFromProContacto(contactsToCall);
+        }
+    }
+}
+```
 
